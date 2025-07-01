@@ -32,11 +32,15 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[12vw] ${
+      className={`py-4 fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[12vw] shadow-md`}
+      style={
         isScrolled
-          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
-          : "bg-transparent"
-      }`}
+          ? {
+              backgroundColor: "rgba(5, 4, 20, 0.5)",
+              backdropFilter: "blur(8px)",
+            }
+          : {}
+      }
     >
       <div className="flex text-white justify-between items-center">
         {/* Logo */}
@@ -49,7 +53,7 @@ function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="text-gray-300 hidden md:flex space-x-8 pt-10">
+        <ul className="text-gray-300 hidden md:flex space-x-8 pt-4">
           {menuItems.map((item) => (
             <li
               key={item.id}
@@ -73,7 +77,7 @@ function Navbar() {
             <FaLinkedin size={24} />
           </a>
         </div>
-        
+
         {/* Mobile Menu Icon */}
         <div className="md:hidden pt-4">
           {isOpen ? (
@@ -92,7 +96,7 @@ function Navbar() {
 
       {/* Mobile Menu Items */}
       {isOpen && (
-        <div className="absolute top-14 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#4e4d5c]/35 backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
+        <div className="absolute top-15 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#4e4d5c]/50 backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
           <ul className="flex flex-col items-center space-y-4 pt-4 pb-2 text-gray-300">
             {menuItems.map((item) => (
               <li

@@ -7,7 +7,7 @@ function About() {
   return (
     <div
       id="about"
-      className="py-4 font-sans flex flex-col-reverse md:flex-row justify-between items-center px-[7vw] md:px-[7vw] lg:px-[12vw]"
+      className="py-4 mt-4 md:mt-16 font-sans flex flex-col-reverse md:flex-row justify-between items-center px-[7vw] md:px-[7vw] lg:px-[12vw]"
     >
       {/* Left Side */}
       <div className="w-full md:w-1/2 mt-8 md:mt-4 text-center md:text-left">
@@ -47,7 +47,7 @@ function About() {
             href="https://github.com/S-Khan786"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-white py-3 px-8 rounded-full text-lg font-bold transition duration-300 transform hover:scale-105"
+            className="text-white py-3 px-8 rounded-full text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
               background: 'linear-gradient(90deg, #8245ec, #a855f7)',
               boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
