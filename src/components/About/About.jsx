@@ -10,7 +10,7 @@ function About() {
       className="py-4 font-sans flex flex-col-reverse md:flex-row justify-between items-center px-[7vw] md:px-[7vw] lg:px-[12vw]"
     >
       {/* Left Side */}
-      <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
+      <div className="w-full md:w-1/2 mt-8 md:mt-4 text-center md:text-left">
         <div className="text-3xl sm:text-4xl md:text-5xl text-white font-bold mb-2 leading-tight">
           Hi, I am
         </div>
@@ -71,7 +71,7 @@ function About() {
           <img
             src={profileImage}
             alt="Mohammad Sahil"
-            className="w-full h-full md:h-120 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
+            className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
           />
         </Tilt>
       </div>

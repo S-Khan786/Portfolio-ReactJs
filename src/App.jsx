@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div className="relative pt-20">
         <Navbar />
         <About />
+        <Skills />
       </div>
     </div>
   );

@@ -92,7 +92,7 @@ function Navbar() {
 
       {/* Mobile Menu Items */}
       {isOpen && (
-        <div className="absolute top-14 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#4e4d5c]/50 backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
+        <div className="absolute top-14 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#4e4d5c]/35 backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
           <ul className="flex flex-col items-center space-y-4 pt-4 pb-2 text-gray-300">
             {menuItems.map((item) => (
               <li
