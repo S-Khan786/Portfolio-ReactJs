@@ -1,6 +1,7 @@
 import React from "react";
 import profileImage from "../../assets/profile.png";
 import { Typewriter } from "react-simple-typewriter";
+import Tilt from "react-parallax-tilt";
 
 function About() {
   return (
@@ -42,14 +43,37 @@ function About() {
           technologies to create seamless user experiences and efficient
           solutions.
         </p>
+        <a
+            href="https://github.com/S-Khan786"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-white py-3 px-8 rounded-full text-lg font-bold transition duration-300 transform hover:scale-105"
+            style={{
+              background: 'linear-gradient(90deg, #8245ec, #a855f7)',
+              boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
+            }}
+          >
+            View More
+          </a>
+
       </div>
       {/* Right Side */}
       <div>
-        <img
-          src={profileImage}
-          alt="Mohammad Sahil"
-          className="w-full h-full md:h-120 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
-        />
+        <Tilt
+          className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full"
+          tiltMaxAngleX={20}
+          tiltMaxAngleY={20}
+          perspective={1000}
+          scale={1.05}
+          transitionSpeed={1000}
+          gyroscope={true}
+        >
+          <img
+            src={profileImage}
+            alt="Mohammad Sahil"
+            className="w-full h-full md:h-120 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
+          />
+        </Tilt>
       </div>
     </div>
   );
