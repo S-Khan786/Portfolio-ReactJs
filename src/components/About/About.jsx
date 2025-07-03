@@ -7,7 +7,7 @@ function About() {
   return (
     <div
       id="about"
-      className="py-4 mt-4 md:mt-16 font-sans flex flex-col-reverse md:flex-row justify-between items-center px-[7vw] md:px-[7vw] lg:px-[12vw]"
+      className="py-4 mt-4 md:mt-10 font-sans flex flex-col-reverse md:flex-row justify-between items-center px-[7vw] md:px-[7vw] lg:px-[12vw]"
     >
       {/* Left Side */}
       <div className="w-full md:w-1/2 mt-8 md:mt-4 text-center md:text-left">
@@ -22,12 +22,7 @@ function About() {
         </span>
         <span className="text-[#8245ec] text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
           <Typewriter
-            words={[
-              "Fullstack Developer",
-              "App Developer",
-              "UI/UX Designer",
-              "Coder",
-            ]}
+            words={["Frontend Developer", "Fullstack Developer", "Coder"]}
             loop={0}
             cursor
             cursorStyle="|"
@@ -37,25 +32,26 @@ function About() {
           />
         </span>
         <p className="text-base sm:text-lg text-gray-400 mb-10 mt-4 leading-relaxed">
-          I am a full-stack developer with over 2 years of experience in
-          building scalable web applications. Skilled in both front-end and
-          back-end development, I specialize in the MERN stack and other modern
-          technologies to create seamless user experiences and efficient
-          solutions.
+          I am a Frontend Developer with over 8 months of experience in building
+          responsive and user-friendly web interfaces. I specialize in creating
+          seamless user experiences using modern technologies like React.js,
+          Tailwind CSS, JavaScript, and TypeScript. While my core strength lies
+          in frontend development, I also have hands-on knowledge of the MERN
+          stack, allowing me to collaborate effectively with backend teams and
+          contribute to full-stack solutions when needed.
         </p>
         <a
-            href="https://github.com/S-Khan786"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white py-3 px-8 rounded-full text-lg font-bold transition duration-300 transform hover:scale-105"
-            style={{
-              background: 'linear-gradient(90deg, #8245ec, #a855f7)',
-              boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
-            }}
-          >
-            View Github
-          </a>
-
+          href="https://github.com/S-Khan786"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-white py-3 px-8 rounded-full text-lg font-bold transform transition-transform duration-300 ease-in-out hover:scale-110"
+          style={{
+            background: "linear-gradient(90deg, #8245ec, #a855f7)",
+            boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
+          }}
+        >
+          View Github
+        </a>
       </div>
       {/* Right Side */}
       <div>
