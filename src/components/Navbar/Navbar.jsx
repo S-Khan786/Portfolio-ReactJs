@@ -66,7 +66,7 @@ function Navbar() {
                 activeSection === item.id ? "text-[#8245ec]" : ""
               }`}
             >
-              <button onClick={() => handleMenuItemClick(item.id)}>
+              <button onClick={() => handleMenuItemClick(item.id)} className="cursor-pointer">
                 {item.label}
               </button>
             </li>
@@ -75,10 +75,10 @@ function Navbar() {
 
         {/* Social Icons */}
         <div className="hidden md:flex space-x-4 pt-4">
-          <a target="_blank" className="text-gray-300 hover:text-[#8245ec]">
+          <a target="_blank" className="text-gray-300 hover:text-[#8245ec] cursor-pointer transition-transform transform hover:scale-110">
             <FaGithub size={24} />
           </a>
-          <a target="_blank" className="text-gray-300 hover:text-[#8245ec]">
+          <a target="_blank" className="text-gray-300 hover:text-[#8245ec] cursor-pointer transition-transform transform hover:scale-110">
             <FaLinkedin size={24} />
           </a>
         </div>
@@ -101,7 +101,7 @@ function Navbar() {
 
       {/* Mobile Menu Items */}
       {isOpen && (
-        <div className="absolute top-15 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#4e4d5c]/50 backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
+        <div className="absolute top-15 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#4e4d5c]/80 backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
           <ul className="flex flex-col items-center space-y-4 pt-4 pb-2 text-gray-300">
             {menuItems.map((item) => (
               <li
@@ -110,7 +110,7 @@ function Navbar() {
                   activeSection === item.id ? "text-[#8245ec]" : ""
                 }`}
               >
-                <button onClick={() => handleMenuItemClick(item.id)}>
+                <button onClick={() => handleMenuItemClick(item.id)} className="cursor-pointer">
                   {item.label}
                 </button>
               </li>
@@ -119,14 +119,14 @@ function Navbar() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                className="text-gray-300 hover:text-white cursor-pointer"
               >
                 <FaGithub size={24} />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                className="text-gray-300 hover:text-white cursor-pointer"
               >
                 <FaLinkedin size={24} />
               </a>
