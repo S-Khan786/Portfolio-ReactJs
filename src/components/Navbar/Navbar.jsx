@@ -75,10 +75,10 @@ function Navbar() {
 
         {/* Social Icons */}
         <div className="hidden md:flex space-x-4 pt-4">
-          <a target="_blank" className="text-gray-300 hover:text-[#8245ec] cursor-pointer transition-transform transform hover:scale-110">
+          <a target="_blank" className="text-gray-300 hover:text-[#8245ec] cursor-pointer transition-transform transform hover:scale-110" href="https://github.com/S-Khan786">
             <FaGithub size={24} />
           </a>
-          <a target="_blank" className="text-gray-300 hover:text-[#8245ec] cursor-pointer transition-transform transform hover:scale-110">
+          <a target="_blank" className="text-gray-300 hover:text-[#8245ec] cursor-pointer transition-transform transform hover:scale-110" href="https://www.linkedin.com/in/mohammad-sahil-a23696200/">
             <FaLinkedin size={24} />
           </a>
         </div>

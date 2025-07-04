@@ -83,7 +83,7 @@ function Projects() {
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="lg:w-full w-[95%] max-h-50 object-cover rounded-xl shadow-2xl"
+                  className="lg:w-full w-[95%] object-cover rounded-xl shadow-2xl"
                 />
               </div>
               <div className="lg:pl-6 p-6">

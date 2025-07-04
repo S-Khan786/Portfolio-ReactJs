@@ -41,11 +41,11 @@ function Footer() {
           {[
             {
               icon: <FaLinkedin />,
-              link: "https://www.linkedin.com/in/tarun-kaushik-553b441a4",
+              link: "https://www.linkedin.com/in/mohammad-sahil-a23696200/",
             },
             {
               icon: <FaGithub />,
-              link: "https://www.linkedin.com/in/tarun-kaushik-553b441a4",
+              link: "https://github.com/S-Khan786",
             },
           ].map((item, index) => (
             <a

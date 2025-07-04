@@ -30,6 +30,11 @@ import shadcnuiLogo from "./assets/shadcn-ui.png";
 import mysqlLogo from "./assets/mysql.png";
 import webmentisLogo from "./assets/webmentis_logo.jpeg";
 import talentriseLogo from "./assets/technokrate_logo.jpeg";
+import medicineMartLogo from "./assets/MedicineMart_.png";
+import marketingWebsiteLogo from "./assets/marketing_website.png";
+import evtMngLogo from './assets/evt-mng-app.png';
+import nsutLogo from './assets/NSUT_logo.png';
+import rpvvLogo from './assets/rpvv.jpeg';
 
 export const SkillsInfo = [
   {
@@ -129,140 +134,53 @@ export const experiences = [
 export const projects = [
   {
     id: 0,
-    title: "GitHub Profile Detective",
+    title: "Medicince Mart App",
     description:
-      "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-    image: profileImage,
-    tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
-    github:
-      "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-    webapp: "https://githubprofiledetective.netlify.app/",
+      "A modern React + TypeScript app to search medicines, manage your cart, and book lab tests with ease. Includes smart medicine search, detailed info, cart control, and instant ordering. Book lab tests quickly through a responsive, user-friendly interface. Features responsive design, Framer Motion animations, and sleek icons via Lucide & React Icons.",
+    image: medicineMartLogo,
+    tags: ["HTML", "Tailwind CSS", "Typescript", "React JS"],
+    github: "https://github.com/S-Khan786/Medicine-Mart-App",
+    webapp: "https://medicine-mart-app.netlify.app/",
   },
   {
     id: 1,
-    title: "CS Prep",
+    title: "Marketing Website Frontend",
     description:
-      "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive profile stats and detailed results, helping students track and improve their preparation journey effectively.",
-    image: profileImage,
-    tags: [
-      "React JS",
-      "Node.js",
-      "MongoDB",
-      "Express",
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-    github: "https://github.com/codingmastr/CSPrep",
-    webapp: "https://csprep.netlify.app/",
+      "Marketing Website is a modern frontend project built with Next.js App Router, TypeScript, Tailwind CSS, and Material UI. It showcases clean routing, reusable components, and sleek page layouts for a business landing site. Deployed via Netlify, the project demonstrates component-driven design and scalable frontend architecture.",
+    image: marketingWebsiteLogo,
+    tags: ["Next JS", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/S-Khan786/Marketing-Website-Frontend",
+    webapp: "https://marketing-website-app.netlify.app/",
   },
   {
     id: 2,
-    title: "Movie Recommendation App",
+    title: "Event Management App",
     description:
-      "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
-    image: profileImage,
-    tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/codingmastr/Movie-Recommendation-App",
-    webapp: "https://movie-recommendation-app-jet.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Email Validator NPM Package",
-    description:
-      "An efficient and customizable NPM package for validating email addresses. Built using React.js and Node.js, it provides robust validation features to help developers ensure that email inputs meet required formats and standards.",
-    image: profileImage,
-    tags: ["React JS", "Node.js", "NPM", "Validation"],
-    github: "https://github.com/codingmastr/cmtk-email-validator",
-    webapp: "https://www.npmjs.com/package/cmtk-email-validator",
-  },
-  {
-    id: 4,
-    title: "Task Reminder Chrome Extension Tool",
-    description:
-      "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
-    image: profileImage,
-    tags: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
-    github: "https://github.com/codingmastr/Task-Reminder-Tool",
-    webapp: "chrome://extensions/?id=kngheeibjnnidhfoomkpnbeghackheci",
-  },
-  {
-    id: 5,
-    title: "Webverse Digital",
-    description:
-      "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
-    image: profileImage,
-    tags: ["HTML", "CSS", "JavaScript", "Framer Motion"],
-    github: "https://github.com/codingmastr/Webverse-Digital",
-    webapp: "https://webversedigital.com/",
-  },
-  {
-    id: 6,
-    title: "Coding Master",
-    description:
-      "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
-    image: profileImage,
-    tags: ["React JS", "Node.js", "MongoDB", "Express", "Payment Integration"],
-    github: "https://codingmasterweb.in/",
-    webapp: "https://codingmasterweb.in/",
-  },
-  {
-    id: 7,
-    title: "Image Search App",
-    description:
-      "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
-    image: profileImage,
-    tags: ["React JS", "API", "Search Feature", "CSS", "Javascript"],
-    github: "https://github.com/codingmastr/Image-Search-App",
-    webapp: "https://imagsearch.netlify.app/",
-  },
-  {
-    id: 8,
-    title: "Image Background Remover",
-    description:
-      "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-    image: profileImage,
-    tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-    github: "https://github.com/codingmastr/Image-Background-Remover",
-    webapp: "https://removeyourbg.netlify.app/",
+      "Developed a real-time Event Management platform using the MERN stack and WebSockets, improving engagement by 35%. Implemented JWT authentication for security, designed a responsive UI with React.js, and optimized the backend with Node.js.",
+    image: evtMngLogo,
+    tags: ["React", "Node", "MongoDB", "Express", "Javascript"],
+    github: "https://github.com/S-Khan786/event-mng-app",
+    webapp: "https://event-mng-app.onrender.com/login",
   },
 ];
 
 export const education = [
   {
     id: 0,
-    img: profileImage,
-    school: "GLA University, Mathura",
-    date: "Sept 2022 - July 2024",
-    grade: "7.81 CGPA",
-    desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-    degree: "Master of Computer Applications - MCA",
+    img: nsutLogo,
+    school: "Netaji Subhas University of Technology, New Delhi",
+    date: "Aug-2020 - Aug 2024",
+    grade: "7.6 CGPA",
+    desc: "I completed my B.Tech in Computer Science and Mathematics from NSUT Delhi. The course gave me a strong foundation in Data Structures, Algorithms, DBMS, Operating Systems, and Applied Mathematics. I also worked on projects using languages like C++, Python. This blend of computer science and mathematics helped me develop strong problem-solving and programming skills.",
+    degree: "B.Tech in Computer Science and Mathematics",
   },
   {
     id: 1,
-    img: profileImage,
-    school: "BSA College, Mathura",
-    date: "Sept 2018 - Aug 2021",
-    grade: "73.2%",
-    desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-    degree: "Bachelor of Science - BSC (Computer Science)",
-  },
-  {
-    id: 2,
-    img: profileImage,
-    school: "Vatsalya Public School Govardhan, Mathura",
-    date: "Apr 2017 - March 2018",
-    grade: "78%",
-    desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-    degree: "CBSE(XII) - PCM with Computer Science",
-  },
-  {
-    id: 3,
-    img: profileImage,
-    school: "Vatsalya Public School Govardhan, Mathura",
-    date: "Apr 2015 - March 2016",
-    grade: "87.5%",
-    desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-    degree: "CBSE(X), Science with Computer Application",
+    img: rpvvLogo,
+    school: "Rajkiya Pratibha Vikas Vidyalaya",
+    date: "Apr 2018 - Apr 2019",
+    grade: "90.6%",
+    desc: "I completed my Class 12th with a Science stream, focusing on Physics, Chemistry, and Mathematics (PCM). This developed my analytical and logical thinking from an early stage. I gained a solid understanding of core scientific and mathematical concepts. This foundation played a key role in shaping my interest in technology and engineering.",
+    degree: "CBSE(XII) - PCM",
   },
 ];
