@@ -3,14 +3,14 @@ import { projects } from "../../constants";
 
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
-  
+
   const handleOpenModal = (project) => {
     setSelectedProject(project);
-  }
+  };
 
   const handleCloseModal = () => {
     setSelectedProject(null);
-  }
+  };
 
   return (
     <div
@@ -65,7 +65,6 @@ function Projects() {
         ))}
       </div>
 
-
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm p-4">
           <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
@@ -104,14 +103,28 @@ function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a
-                    href={selectedProject.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
-                  >
-                    View Code
-                  </a>
+                  {selectedProject.personal ? (
+                    <a
+                      href={selectedProject.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    >
+                      View Code
+                    </a>
+                  ) : (
+                    <button
+                      onClick={() =>
+                        alert(
+                          "This is a company project. Only 'View Live' is available."
+                        )
+                      }
+                      className="w-1/2 bg-gray-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center cursor-not-allowed opacity-60"
+                    >
+                      View Code
+                    </button>
+                  )}
+
                   <a
                     href={selectedProject.webapp}
                     target="_blank"
